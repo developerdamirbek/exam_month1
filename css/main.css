@@ -1,0 +1,803 @@
+/* Google Fonts Link */
+
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hero Section Start */
+
+.hero {
+    padding-top: 30px;
+    background-repeat: no-repeat;
+    background-image: url(../img/hero-bg.png);
+    background-position: top 30px right 0;
+}
+
+
+.header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.navbar_list {
+    display: flex;
+    gap: 41px;
+}
+
+.navbar_link {
+    color: #736D67;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.4s ease;
+}
+
+.active {
+    color: #DC780B;
+    font-weight: 500;
+}
+
+.navbar_link:hover {
+    color: #DC780B;
+}
+
+.navbar_btn {
+    color: #FFF;
+    padding: 14px 30px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+    background-color: #DC780B;
+}
+
+.showcase {
+    padding-top: 174px;
+}
+
+.hero_content {
+    width: 555px;
+}
+
+.hero_title {
+    color: #150C01;
+    font-family: 'Philosopher';
+    font-size: 48.83px;
+    font-weight: 700;
+    line-height: 57.6px;
+    margin-bottom: 42px;
+}
+
+.hero_paragraph {
+    color: #6F6A63;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 50px;
+}
+
+.hero_btn_block {
+    display: flex;
+    gap: 30px;
+}
+
+.btn_primary {
+    color: #FFF;
+    padding: 20px 40px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+    background-color: #DC780B;
+}
+
+.btn_light {
+    color: #DC780B;
+    padding: 20px 40px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 1.5px solid #FBF1E7;
+}
+
+/* Hero Section End */
+
+
+/* Features Section Start */
+
+.features {
+    padding-top: 200px;
+}
+
+.features_title {
+    color: #D7964E;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+
+.features_info {
+    color: #000;
+    text-align: center;
+    font-family: 'Philosopher';
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+
+.features_list {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+}
+
+.features_item {
+    position: relative;
+    width: 300px;
+    text-align: center;
+    padding-top: 121px;
+}
+
+
+.features_item::before {
+    content: '';
+    position: absolute;
+    width: 88px;
+    height: 88px;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features_item:nth-child(1)::before {
+    background-image: url(../img/feature1.svg);
+}
+
+.features_item:nth-child(2)::before {
+    background-image: url(../img/feature2.svg);
+}
+
+.features_item:nth-child(3)::before {
+    background-image: url(../img/feature3.svg);
+}
+
+.features_item_title {
+    color: #150C01;
+    font-family: 'Philosopher';
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.features_item_text {
+    color: #6F6A63;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/* Features Section End */
+
+
+/* About Section Start */
+
+.about {
+    padding: 108px 0;
+}
+
+.about_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about_img {
+    border-radius: 28px;
+}
+
+.about_content {
+    width: 487px;
+}
+
+.about_title {
+    color: #D7964E;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+}
+
+.about_info {
+    color: #150C01;
+    font-family: 'Philosopher';
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 40.625px;
+    margin-bottom: 30px;
+}
+
+.about_text {
+    color: #6F6A63;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.about_btn {
+    color: #FFF;
+    padding: 11px 34px 14px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #DC780B;
+}
+
+/* About Section End */
+
+
+/* Menu Section Start */
+
+.menu {
+    padding-bottom: 187px;
+}
+
+.menu_title {
+    color: #d7964e;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+}
+
+.menu_info {
+    color: #150C01;
+    text-align: center;
+    font-family: 'Philosopher';
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+.menu_text {
+    width: 748px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #6F6A63;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 60px;
+}
+
+.menu_cards_block {
+    display: grid;
+    grid-template-columns: 360px 360px 360px;
+    grid-gap: 30px;
+    margin-bottom: 50px;
+}
+
+.menu_card {
+    position: relative;
+    border-radius: 75px 10px 10px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background-color: #FFF;
+}
+
+.menu_img {
+    border-bottom-right-radius: 75px;
+    border-top-left-radius: 75px;
+    border-top-right-radius: 10px;
+}
+
+.menu_card_info {
+    padding: 25px;
+}
+
+.menu_info_header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.food_name,
+.food_price {
+    color: #150C01;
+    font-family: 'Philosopher';
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.food_info {
+    color: #6F6A63;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.plus_btn {
+    color: #fff;
+    padding: 7px 14px;
+    font-size: 24px;
+    font-weight: 400;
+    border-radius: 5px;
+    background-color: #DC780B;
+}
+
+.two_rate::after {
+    content: '';
+    position: absolute;
+    width: 88px;
+    height: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../img/double-star.svg);
+    bottom: 40px;
+    right: 25px;
+}
+
+.three_rate::after {
+    content: '';
+    position: absolute;
+    width: 88px;
+    height: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../img/triple-star.svg);
+    bottom: 40px;
+    right: 25px;
+}
+
+.four_rate::after {
+    content: '';
+    position: absolute;
+    width: 88px;
+    height: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../img/four-star.svg);
+    bottom: 40px;
+    right: 25px;
+}
+
+.full_rate::after {
+    content: '';
+    position: absolute;
+    width: 88px;
+    height: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../img/full-star.svg);
+    bottom: 40px;
+    right: 25px;
+}
+
+.menu_btn_block {
+    text-align: center;
+}
+
+.menu_btn {
+    color: #DC780B;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 30px;
+    border-radius: 5px;
+    border: 1px solid #FBF1E7;
+}
+
+/* Menu Section End */
+
+
+/* Ads Section Start */
+
+.ads {
+    background-color: #FBF1E7;
+    position: relative;
+    z-index: -1;
+}
+
+.ads_container {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.ads_img {
+    border-radius: 50px;
+    position: absolute;
+    z-index: 2;
+    right: 290px;
+}
+
+.ads_content {
+    width: 555px;
+    padding-top: 114px;
+    padding-bottom: 129px;
+    padding-left: 97px;
+}
+
+.ads_title {
+    color: #D7964E;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 3.2px;
+    margin-bottom: 5px;
+}
+
+.ads_about {
+    width: 540px;
+    color: #150C01;
+    font-family: 'Philosopher';
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 40.625px;
+    margin-bottom: 30px;
+}
+
+.ads_text {
+    width: 555px;
+    color: #6F6A63;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 39px;
+}
+
+.ads_btn_block {
+    display: flex;
+}
+
+.ads_btn_dark::before {
+    content: "";
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../img/appstore.svg);
+    position: absolute;
+    top: 11px;
+    left: 28px;
+}
+
+.ads_btn_dark {
+    padding: 15px 30px 14px 62px;
+    border-radius: 5px;
+    background-color: #150C01;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+
+.ads_btn_light::before {
+    content: "";
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../img/googleplay.svg);
+    position: absolute;
+    top: 11px;
+    left: 29px;
+}
+
+.ads_btn_light {
+    margin-left: 30px;
+    padding: 15px 30px 14px 63px;
+    border-radius: 5px;
+    border: 2px solid #E6E2DD;
+    color: #150C01;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+
+.ads_img {
+    position: absolute;
+    right: 0;
+    transform: translateX(-60%);
+}
+
+/* Ads Section End */
+
+/* Testimonials Section */
+
+.testimonials {
+    padding-top: 213px;
+    padding-bottom: 120px;
+}
+
+.testimonial_title {
+    color: #D7964E;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.testimonial_info {
+    color: #000;
+    text-align: center;
+    font-family: 'Philosopher';
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 23px;
+}
+
+.testimonial_text {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 34px;
+}
+
+.testimonial_content {
+    position: relative;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 0 147px;
+}
+
+.testimonial_content::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../img/left-arrow.svg);
+    left: 0;
+    top: 50%;
+    transform: translateY(100%);
+}
+
+.testimonial_content::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../img/right-arrow.svg);
+    right: 0;
+    top: 50%;
+    transform: translateY(100%);
+}
+
+.testimonial_img {
+    width: 139px;
+    height: 139px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-image: url(../img/user-bg.svg);
+}
+
+.user_img {
+    position: absolute;
+    border-radius: 50%;
+    right: 34px;
+    bottom: 50px;
+}
+
+.user_text {
+    position: relative;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 68px;
+}
+
+.user_text::after {
+    content: '';
+    position: absolute;
+    width: 88px;
+    height: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../img/four-star.svg);
+    bottom: -36px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.user_name {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.user_about {
+    color: #6F6A63;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* Testimonials End */
+
+
+/* Contact Section Start */
+
+.contact {
+    padding-top: 115px;
+    padding-bottom: 117px;
+    background-color: #FBF1E7;
+}
+
+.contact_title {
+    color: #D7964E;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.contact_about {
+    width: 749px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #150C01;
+    text-align: center;
+    font-family: 'Philosopher';
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 40.6px;
+    margin-bottom: 46px;
+}
+
+.contact_form {
+    position: relative;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: #FFF;
+}
+
+.form_input {
+    width: 100%;
+    padding: 32px;
+    display: block;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.contact_form_btn {
+    position: absolute;
+    width: 156px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px 57px;
+    border-radius: 10px;
+    background-color: #DC780B;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+/* Contact Section End */
+
+
+/* Footer Start */
+
+.main_footer {
+    padding-top: 137px;
+    padding-bottom: 104px;
+    background-color: #252525;
+}
+
+.footer_container {
+    display: grid;
+    grid-template-columns: 262px 262px 262px 262px;
+    grid-gap: 30px;
+}
+
+.footer_social_list {
+    display: flex;
+    gap: 10px;
+}
+
+.footer_img {
+    margin-bottom: 25px;
+}
+
+.footer_box_list {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.footer_box_item {
+    color: #BEBEBE;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer_list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer_list_title {
+    color: #FFF;
+    font-family: 'Philosopher';
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 26px;
+}
+
+.footer_link {
+    color: #BEBEBE;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Footer End */
