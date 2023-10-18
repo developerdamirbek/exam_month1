@@ -437,7 +437,6 @@ a {
 .ads {
     background-color: #FBF1E7;
     position: relative;
-    z-index: -1;
 }
 
 .ads_container {
@@ -490,6 +489,17 @@ a {
 
 .ads_btn_block {
     display: flex;
+    gap: 30px;
+}
+
+.ads_btn_dark {
+    padding: 15px 30px 14px 62px;
+    border-radius: 5px;
+    background-color: #150C01;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
 }
 
 .ads_btn_dark::before {
@@ -504,11 +514,11 @@ a {
     left: 28px;
 }
 
-.ads_btn_dark {
-    padding: 15px 30px 14px 62px;
+.ads_btn_light {
+    padding: 15px 30px 14px 63px;
     border-radius: 5px;
-    background-color: #150C01;
-    color: #FFF;
+    border: 2px solid #E6E2DD;
+    color: #150C01;
     font-size: 16px;
     font-weight: 500;
     position: relative;
@@ -524,17 +534,6 @@ a {
     position: absolute;
     top: 11px;
     left: 29px;
-}
-
-.ads_btn_light {
-    margin-left: 30px;
-    padding: 15px 30px 14px 63px;
-    border-radius: 5px;
-    border: 2px solid #E6E2DD;
-    color: #150C01;
-    font-size: 16px;
-    font-weight: 500;
-    position: relative;
 }
 
 .ads_img {
@@ -728,7 +727,6 @@ a {
 
 .contact_form_btn {
     position: absolute;
-    width: 156px;
     top: 0;
     right: 0;
     bottom: 0;
